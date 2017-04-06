@@ -432,7 +432,6 @@ if ( $text['2'] > 1) {
       save("data/users/".$text['1']."/coin.txt",$newcoin);
       SendMessage($chat_id,"عملیات با موفقیت انجام شد");
     SendMessage($text['1'],"تعداد ".$text['2']." الماس به شما اضافه شد");
-}
     else {
       SendMessage($chat_id,"موجودی شما کافی نمیباشد");
     }
@@ -444,7 +443,7 @@ if ( $text['2'] > 1) {
 else {
 	SendMessage($chat_id,"مقدار انتقال میبایست بیشتر از 1 باشد");
 }
-}
+}}
 
 elseif (strpos($textmessage,"/addgem") !== false && $from_id == $admin) {
   $text = explode(" ",$textmessage);
