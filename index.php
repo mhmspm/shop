@@ -444,7 +444,7 @@ if ( $text['2'] > 1) {
 else {
 	SendMessage($chat_id,"مقدار انتقال میبایست بیشتر از 1 باشد");
 }
-} }
+}
 
 elseif (strpos($textmessage,"/addgem") !== false && $from_id == $admin) {
   $text = explode(" ",$textmessage);
